@@ -1,0 +1,17 @@
+body {
+  background-color: #FF7456;
+  color: #99e1d9;
+  text-align: center;
+}
+#p {
+  font-size: 200px;
+  
+}
+#stopwatch {
+  text-align: right;
+  font-size: 50px;
+}
+
+#label {
+  font-size: 100px;
+}
