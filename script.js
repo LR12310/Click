@@ -11,6 +11,8 @@ restart.style.display = "none"
 
 body.addEventListener('touchstart', increase)
 body.addEventListener('click', increase)
+restart.addEventListener('click', again)
+restart.addEventListener('touchstart', again)
 
 function increase() {
   if (go == 0) {
@@ -40,4 +42,9 @@ function timer() {
     restart.style.display = "initial"
   }
 }
+
+function again() {
+  location.reload()
+}
+
   
