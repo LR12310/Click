@@ -4,15 +4,17 @@ var go = 0;
 body = document.getElementById("body");
 pp = document.getElementById("p");
 label = document.getElementById("label");
+restart = document.getElementById("restart");
 label.innerHTML = "Click To Start"
 stopwatch = document.getElementById("stopwatch");
+restart.style.display = "none"
 
 body.addEventListener('touchstart', increase)
 body.addEventListener('click', increase)
 
 function increase() {
   if (go == 0) {
-    label.style.visibility = "hidden";
+    label.style.display = "none";
   }
   if (time > 0) {
       score++
@@ -34,7 +36,8 @@ function timer() {
   } else {
     label.innerHTML = "Score:"
     label.style.visibility = "visible";
-    stopwatch.style.visibility = "hidden"
+    stopwatch.style.display = "none"
+    restart.style.display = "initial"
   }
 }
   
